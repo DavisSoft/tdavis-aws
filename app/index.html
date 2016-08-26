@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tdavis aws</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="container">
+    <div class="header">
+      <ul class="nav mynav nav-pills pull-right ">
+        <li class="active"><a>Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <a class="myhidden" onclick="toggleHidden()">
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="myhidden isHidden"><a href="ai.html">AI</a></li>
+        <!-- li class="myhidden isHidden"><a href="tests.html">Tests</a></li>
+              <!-- li><a href="#">Contact</a></li-->
+      </ul>
+      <h3 class="text-muted">TDavis</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 blog-main">
+        <div class="blog-post">
+          <h2 class="blog-post-title">Mac Outlook Sounds</h2>
+          <p class="lead blog-description">I got distracted...</p>
+          <p class="blog-post-meta">Aug 25, 2016 by <a href="about.html">td</a></p>
+          <div class="row">
+            <div class="col-sm-8">
+              <p>I have more than one Mac, and get email on both. That sound gets annoying. First I turned it off on both, then found I missed the notification at times.</p>
+              <p>When I was working on the backup laptop I liked getting notified, the main Mac is on all the time and I left that notification off. But the personal backup I decide to put a new sound so I'd know MY email.</p>
+              <p>When I dont want to hear it, I shut the lid.</p>
+              <p>As it turns out, you can change and add your own sounds and really you can't. So I did.</p>
+              <p>Download this <a href="MicrosoftSoundSet.eragesoundset.zip"><b>file</b></a> then unzip it and move it to your library sound file area as shown. The file is copied from Microsoft's Entourage product.</p>
+              <p>You can then muck about with the contents as you wish. Just edit he PLIST file, it contains XML for the sound set, and the files are expected in the parent folder.</p>
+              <p>The file name extension apparently needs to be as shown in the image.</p>
+              <p>For me the folder was <em> /Users/tdavis/Library/Group Containers/UBF8T346G9.Office/Outlook/Outlook Sound Sets</em></p>
+              <p>I suspect the gibberish at the beginning is some sort of release code that may be unique to you.</p>
+              <p>I get distracted.</p>
+            </div>
+            <div class="col-sm-4">
+              <img class="img-responsive" src="images/soundset.png">
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- /.blog-post -->
+
+        <div class="blog-post">
+          <h2 class="blog-post-title">Intro To emma</h2>
+          <p class="lead blog-description">My web bot, she has a lisp.</p>
+          <p class="blog-post-meta">May 1, 2016 by <a href="about.html">td</a></p>
+          <div class="row">
+            <div class="col-sm-8">
+              <p>Meet emma. I decided to introduce you. I have designed a front end that I've begun to implement to build out an interface for emma. I need the API's for the tweet bot anyway, this is step 1.</p>
+              <p>So as it evolves I'll post details here.</p>
+              <p>Application</p>
+              <p>
+                <ul>
+                  <li>UI components -- dialogs, edit boxes, panels, controls</li>
+                  <li>UI code -- controllers to manage the session and conversation API's</li>
+                  <li>Server Code -- node.js server to parse, pass to <em>emma</em></li>
+                  <li>Data -- logs, profile and user data </li>
+                </ul>
+              </p>
+              <p>ReSTful API's get/post/put/delete </p>
+              <p> post for controller actions, creating new session/conversation, get status, put command, delete session/conversation</p>
+            </div>
+            <!--div class="col-sm-4">
+                <img class="img-responsive" src="images/emma-front-end.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <p>Protocols for sessions supporting start, delete</p>
+                <p>Protocols for conversations within sessions supporting start, command, and delete</p>
+                <p>User auth and profiling is not supported</p>
+                <p>Design for OAUTh login</p>
+                <p>ReSTFUL CRUD as outlined above</p>
+                <p>Sequences for session and conversation protocols</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="images/chatbot-sequence.png">
+              </div-->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- /.blog-post -->
+
+        </hr>
+        <div class="blog-post">
+          <h2 class="blog-post-title">MVC Architectures</h2>
+          <p class="lead blog-description">My book due out this summer.</p>
+          <p class="blog-post-meta">March 22, 2016 by <a href="about.html">td</a></p>
+          <div class="row">
+            <div class="col-sm-8">
+              <p>Model-View-Controller (MVC) is nothing new really. Separation of data access, presentation and data model meant that applications could mutate and adjust to changing data and presentment.</p>
+              <p>Like many software concepts its never as easy as we'd like, but still this yeilds manageable and achieveable architectures.</p>
+              <p>My book examines some popular architectures and compares the benefits and gotchas of each.</p>
+              <ul>
+                <li><a href="http://emberjs.com/">EmberJS</a>
+                </li>
+                <li><a href="https://docs.angularjs.org/api">AngularJS 1.4</a>
+                </li>
+                <li><a href="https://angular.io/">AngularJS 2.0</a>
+                </li>
+                <li><a href="https://facebook.github.io/react/">React</a>
+                </li>
+                <li><a href="http://backbonejs.org/">Backbone</a>
+                </li>
+              </ul>
+              <p>Each of these has a <em>sweet spot</em>. I make conclusions and recommendations for each and suggest where the WWW needs to go in the next MVC architectures.</p>
+              <p>I plan on publishing chapters as they are editted on my blog.</p>
+
+            </div>
+            <div class="col-sm-4">
+              <img class="img-responsive" src="images/mvc-role-diagram.png">
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- /.blog-post -->
+
+        <hr>
+        <div class="blog-post">
+          <h2 class="blog-post-title">My Mac Desktop Revisited</h2>
+          <p class="lead blog-description">Tools I wouldn&#039;t want to do without.</p>
+          <p class="blog-post-meta">March 22, 2016 by <a href="about.html">td</a></p>
+          <div class="row">
+            <div class="col-sm-8">
+              <p>I use Macs as a personal workstation and I have a couple of them. At times I've used PC's, or Linux, or Unix variants. I always loved Unix for the command line and the shell, and the GUI for some things. Over the years I have grown used
+                to having familiar tools around and where possible I've replaced them or moved on to other tools.</p>
+
+              <p>One could argue what exactly the MacOS is, as its not BSD, its not Mach, but whatever... I can have bash or csh or ksh, and XWindow with layers of stuff bolted on or whatever this GUI really is. I have come to like my Mac.</p>
+
+              <p>I also like linux but don&#039;t have a configuration available for Linux. I bought a new MacPro last winter. </p>
+
+              <p> At the moment, this is home.</p>
+              <p><a href="macdesktop.html">Read full article.</a></p>
+            </div>
+            <div class="col-sm-4 myhidden isHidden">
+              <img class="img-responsive" src="images/macbook-pro.png">
+            </div>
+          </div>
+        </div>
+        <!-- /.blog-post -->
+
+        <hr>
+        <div class="blog-post">
+          <h2 class="blog-post-title">Yet Another Blog</h2>
+          <p class="lead blog-description">Welcome to this iteration.</p>
+          <p class="blog-post-meta">January 26, 2015 by <a href="about.html">td</a></p>
+          <div class="row">
+            <div class="col-sm-8">
+              <p>This is my social blog, for me that means the vanilla version.</p>
+              <p>I am a software architect. I make real-time systems, and extend those architectures to the WWW.</p>
+              <p>My current passion is the semantic web.</p>
+
+              <p>If you are interested, try the links below.</p>
+              <ul>
+                <li><a href="http://www.w3.org/DesignIssues/Overview.html">W3 Semantic Web Design Issues</a></li>
+                <li><a href="http://www.w3.org/DesignIssues/Semantic.html">W3 Semantic Web Road Map</a></li>
+                <li><a href="http://www.w3.org/TR/owl-features/">The Web Ontology Language OWL</a></li>
+                <li><a href="http://www.w3.org/wiki/LargeTripleStores">W3 Triple Stores</a></li>
+              </ul>
+
+            </div>
+            <div class="col-sm-4">
+              <img class="img-responsive" src="images/durga-xsm.png">
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- /.blog-post -->
+      </div>
+      <!-- /.blog-main -->
+    </div>
+  </div>
+  <div class="footer">
+    <ul class="list-inline">
+      <li><a href="http://twitter.com/tdavis0525" target="_blank" title="@tdavis0525" style="text-decoration:none;"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="http://github.com/bronzelegs" target="_blank" title="@bronzelegs" style="text-decoration:none;"><i class="fa fa-github"></i></a></li>
+      <li><a href="mailto:tdavis0525@gmail.com" title="tdavis" style="text-decoration:none;"><i class="fa fa-envelope"></i></a></li>
+      <li><small>All original content &copy;Copyright Terry Davis 2015, 2016</small></li>
+    </ul>
+  </div>
+
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-59052020-1');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

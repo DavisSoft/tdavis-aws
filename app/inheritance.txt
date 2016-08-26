@@ -1,0 +1,49 @@
+'use strict';
+
+'use strict';
+
+function Person(first, middle, last, motto) {
+  this.firstName = first;
+  this.middleName = middle;
+  this.lastName = last;
+  this.motto = motto;
+}
+
+Person.prototype.about = function(){
+  return 'Hi, my name is ' + this.firstName + ' ' + this.middleName + ' ' + this.lastName;
+};
+
+Person.prototype.toString = function(){
+  return this.about();
+};
+
+function Job (jobName, desc) {
+  this.applyingForJob = jobName;
+  this.jobDesc = desc;
+}
+
+Job.prototype.about = function(){
+  return this.applyingForJob + ': ' + this.jobDesc;
+};
+
+Job.prototype.toString = function(){
+  return this.about();
+};
+
+function Candidate(person, theJob, desc) {
+  this.person = person;
+  this.job = theJob;
+  this.description = desc;
+}
+
+Candidate.prototype.about = function(){
+  return this.person.about() + ' and I am appying for ' + this.job.about() + ' ' + this.description;
+};
+
+Candidate.prototype.toString = function(){
+  return this.about();
+};
+var description = 'in order to make this go quicker I hacked up some stuff so we can get on with it';
+var me = new Person('Terrance','Alan','Davis', 'If I ever grow up I want to be just like me');
+var job = new Job('Team Leader','Javascript development lead');
+var candidate = new Candidate(me, job, description);

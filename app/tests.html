@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tdavis aws</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class='container'>
+      <div class='header'>
+        <ul class='nav nav-pills pull-right'>
+          <li><a href='index.html'>Home</a></li>
+          <li class=''><a href='about.html'>About</a></li>
+          <li><a href='projects.html'>Projects</a></li>
+          <li class='active'><a href='tests.html'>Tests</a></li>
+          <!-- li><a href='#'>Contact</a></li-->
+        </ul>
+        <h3>TDavis</h3>
+      </div>
+
+      <div class='row'>
+        <div class='col-lg-12 blog-main'>
+          <div class='blog-post'>
+            <h2 class='blog-post-title'>Testing Stuff</h2>
+            <p class='lead blog-description'>Interview questions and other tests</p>
+            <p class='blog-post-meta'>March 1-22, 2016 by <a href='about.html'>td</a></p>
+            <div class='row'>
+              <div class='col-sm-8'>
+                <p>This is a gulp based project hosted on AWS.</p>
+                <p>I'm looking for a new opportunity. In the interview process often coding competence is tested. I collect them when I am asked so that hopefully each time this process goes quicker.</p>
+
+                <p>For the record, I am certified in JavaScript, JQuery, CSS3 by W3.</p>
+
+                <p>I should add that my strengths are team building and leadership, which javascript can't test.</p>
+
+                <p>So here is a list of stuff that I've been asked to do.</p>
+
+              </div>
+              <div class='col-sm-4'>
+                <img height='300px' src='images/simple-tests.jpg'>
+              </div>
+            </div>
+          </div>
+          <!-- /.blog-post -->
+
+            <!-- paste start -->
+            <!-- row -->
+            <div class='row'>
+              <div class='col-sm-12'>
+                <p class='lead blog-description'>This should cover it.</p>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-12'>
+
+                <ul>
+                  <li>
+                    <a href='#'>Sums to 100</a>
+                    <p>Search a collection of numbers for pairs that sum to 100, show each unique pair</p>
+                    <div class="myCodeEmbed">
+                        <embed src="sums.txt" width=100% height=100%>
+                    </div>
+                    <button id='runOne' class='default-button'>Run</button>
+                    <div id='resultOne'></div>
+                  </li>
+                  <li>
+                    <a href='#'>Inheritance</a>
+                    <p>Various code to demonstrate proper use of inheritance and new.</p>
+                    <div class="myCodeEmbed">
+                        <embed src="inheritance.txt" width=100% height=100%>
+                    </div>
+                    <button id='runTwo' class='default-button'>Run</button>
+                    <div id='resultTwo'></div>
+                  </li>
+                  <li>
+                    <a href='#'>AJAX calls</a>
+                    <p>And the ubiquitous XHR requests, I'd prefer to wrap these in promises, but JQ promises are odd...</p>
+                    <div class="myCodeEmbed">
+                        <embed src="fortune.txt" width=100% height=100%>
+                    </div>
+                    <button id='runThree' class='default-button'>Run</button>
+                    <button id='newFortune'>New Fortune</button>
+                    <div id='resultThree' class='panel default-panel'>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+            <!-- row -->
+            <!-- paste stop -->
+
+        </div>
+        <!-- /.blog-main -->
+      </div>
+
+      <div class='footer'>
+        <ul class='list-inline'>
+          <li><a href='http://twitter.com/tdavis0525' target='_blank' title='@tdavis0525' style='text-decoration:none;'><i class='fa fa-twitter'></i></a></li>
+          <li><a href='http://github.com/bronzelegs' target='_blank' title='@bronzelegs' style='text-decoration:none;'><i class='fa fa-github'></i></a></li>
+          <li><a href='mailto:tdavis0525@gmail.com' title='tdavis' style='text-decoration:none;'><i class='fa fa-envelope'></i></a></li>
+          <li><small>All original content &copy;Copyright Terry Davis 2015,2016</small></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-59052020-1');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/tests.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

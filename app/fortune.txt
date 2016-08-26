@@ -1,0 +1,21 @@
+// fortune 'class' requires jquery
+'use strict';
+
+function Fortune() {
+  this.get = function(){
+    var that =this;
+    $.get( 'https://fortunecookieapi.com/v1/cookie')
+    .done(function( mydata ) {
+      that.text=mydata[0].fortune.message;
+    });
+  };
+  this.text = this.get();
+  this.toString = function(){
+    return this.text;
+  };
+}
+Fortune.prototype.new = function(){
+  this.get();
+};
+
+var f = new Fortune();

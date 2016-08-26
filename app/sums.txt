@@ -1,0 +1,30 @@
+'use strict';
+
+function sumTo100(stuff) {
+   var result = [];
+   var inner, a, b;
+   while (stuff.length) {
+     a = stuff[0];
+     for (inner = 1; inner < stuff.length; ){
+       b = stuff[inner];
+       if ((a + b) === 100){
+         result.push([a, b]);
+       }
+       while (b === stuff[inner]) {
+         inner++;
+       }
+     }
+     while (a === stuff[0]) {
+       stuff.shift();
+     }
+   }
+   return result;
+ }
+ var nums = [1, 99, 50, 49, 51, 30, 99, 1, 99, 50, 49, 51, 30, 99, 1, 99, 50, 49, 51, 30, 99];
+ var snums = nums.sort();        // sort to improve efficiency
+ var list = sumTo100(snums);   // process the sorted list
+ var i=0;                        // display the list of pairs
+ var results = 'pairs : ';
+ for (i = 0; i < list.length; i++){
+   results += list[i] + ' ';
+ }
