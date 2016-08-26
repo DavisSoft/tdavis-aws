@@ -7,30 +7,6 @@ var serverURI = 'http://localhost:8080/session';
 var testing = false;
 
 
-
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function() {
-    var context = this, args = arguments;
-    var later = function() {
-      timeout = null;
-      if (!immediate) {
-        func.apply(context, args);
-      }
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) {
-      func.apply(context, args);
-    }
-  };
-}
-
 function receiveMsg(s){
   //
   var d = new Date(Date.now()).toTimeString().substr(0, 8);
@@ -56,17 +32,6 @@ function sendMsg(txt, type, sessionid){
   }
 }
 
-
-var myReset = debounce(function() {
-  $('.myhidden').toggleClass('isHidden');
-}, 2500);
-
-function toggleHidden(){
-  $('.myhidden').toggleClass('isHidden');
-  //console.log('>blink<');
-  myReset();
-}
-
 function clickedMe(){
   var text = $('#msgTextarea').val();
   if (text.length) {
@@ -75,15 +40,14 @@ function clickedMe(){
     $('#msgTextarea').val('');
     sendMsg(text);
   }
-
 }
+
 function resetMe(){
   $('#myConversation').text('');
 }
 function setLastResponse(txt){
   $('#myLastResponse').text(txt);
 }
-
 
 function showMyMessages(){
   console.log('myMessages');

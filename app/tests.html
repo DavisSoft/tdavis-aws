@@ -8,6 +8,9 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,400,400italic,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -58,7 +61,7 @@
 
               </div>
               <div class='col-sm-4'>
-                <img height='300px' src='images/simple-tests.jpg'>
+                <img height='250px' src='images/simple-tests.jpg'>
               </div>
             </div>
           </div>
@@ -78,8 +81,11 @@
                   <li>
                     <a href='#'>Sums to 100</a>
                     <p>Search a collection of numbers for pairs that sum to 100, show each unique pair</p>
-                    <div class="myCodeEmbed">
-                        <embed src="sums.txt" width=100% height=100%>
+                    <div>
+                        <pre >
+                            <code id="sums-code-data">
+                            </code>
+                        </pre>
                     </div>
                     <button id='runOne' class='default-button'>Run</button>
                     <div id='resultOne'></div>
@@ -87,8 +93,12 @@
                   <li>
                     <a href='#'>Inheritance</a>
                     <p>Various code to demonstrate proper use of inheritance and new.</p>
-                    <div class="myCodeEmbed">
-                        <embed src="inheritance.txt" width=100% height=100%>
+                    <div>
+                        <pre>
+                            <code id ="inh-code-data" >
+                            </code>
+
+                        </pre>
                     </div>
                     <button id='runTwo' class='default-button'>Run</button>
                     <div id='resultTwo'></div>
@@ -96,8 +106,11 @@
                   <li>
                     <a href='#'>AJAX calls</a>
                     <p>And the ubiquitous XHR requests, I'd prefer to wrap these in promises, but JQ promises are odd...</p>
-                    <div class="myCodeEmbed">
-                        <embed src="fortune.txt" width=100% height=100%>
+                    <div>
+                        <pre >
+                            <code id="fortune-code-data">
+                            </code>
+                        </pre>
                     </div>
                     <button id='runThree' class='default-button'>Run</button>
                     <button id='newFortune'>New Fortune</button>
@@ -161,6 +174,7 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/tests.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>

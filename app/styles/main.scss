@@ -1,6 +1,8 @@
 $icon-font-path: '../fonts/';
 
 $font-family-sans-serif: 'Titillium Web', sans-serif;
+
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -186,6 +188,7 @@ textarea {
 }
 
 .myCodeEmbed {
-    width: 100%;
-    height: 100%;
+    background-color: purple;
+    font-size: 2px;
+    font-family: 'Dosis', sans-serif;
 }
