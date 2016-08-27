@@ -1,20 +1,11 @@
 'use strict';
 
 (function() {
-	$.when(
-		$.when($( '#sums-code-data' ).load( 'fortune.txt' )).then( function( data, textStatus, jqXHR){
-			console.log('sums-code-data loaded ');
-		}),
-		$.when($( '#inh-code-data' ).load( 'fortune.txt' )).then( function(data, textStatus, jqXHR ){
-			console.log('inh-code-data loaded ');
-		}),
-		$.when($( '#fortune-code-data' ).load( 'fortune.txt' )).then( function( data, textStatus, jqXHR){
-			console.log('fortune-code-data loaded ');
-		})
-	).then(function(){
-			console.log('test script text loaded');
-});
-	console.log('test functions loaded');
+	$( '#sums-code-data' ).load( 'fortune.txt' );
+	$( '#inh-code-data' ).load( 'fortune.txt' );
+	$( '#fortune-code-data' ).load( 'fortune.txt' );
+
+	//console.log('test functions loaded');
 })();
 
 

@@ -45,7 +45,7 @@ function toggleHidden(){
   myReset();
 }
 
-console.log('loaded the emmaui');
+//console.log('loaded the emmaui');
 
 var serverURI = 'http://localhost:8080/session';
 var testing = false;
