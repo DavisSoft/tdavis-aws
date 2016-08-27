@@ -137,7 +137,7 @@ body {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #337ab7;
-    background-color: aliceblue;
+    background-color: #EBF5FB  ;
 }
 .nav > li > a {
 
@@ -190,5 +190,14 @@ textarea {
 .myCodeEmbed {
     background-color: purple;
     font-size: 2px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif
+}
+
+.header h3 {
+    background-color: aliceblue;
+    /* border: gray; */
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    padding-top: 5px;
 }
