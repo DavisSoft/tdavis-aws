@@ -1,16 +1,22 @@
 'use strict';
 
-//console.log('we dont need any test console.log()s');
-
 (function() {
-	//$.when( $( "#sums-code-data" ).load( "sums.txt" );).then(function( data, textStatus, jqXHR ) {
-  	//	alert( jqXHR.status ); // Alerts 200
-	//});
-	$( '#sums-code-data' ).load( 'sums.txt' );
-	$( '#inh-code-data' ).load( 'inheritance.txt' );
-	$( '#fortune-code-data' ).load( 'fortune.txt' );
+	$.when(
+		$.when($( '#sums-code-data' ).load( 'fortune.txt' )).then( function( data, textStatus, jqXHR){
+			console.log('sums-code-data loaded ');
+		}),
+		$.when($( '#inh-code-data' ).load( 'fortune.txt' )).then( function(data, textStatus, jqXHR ){
+			console.log('inh-code-data loaded ');
+		}),
+		$.when($( '#fortune-code-data' ).load( 'fortune.txt' )).then( function( data, textStatus, jqXHR){
+			console.log('fortune-code-data loaded ');
+		})
+	).then(function(){
+			console.log('test script text loaded');
+});
 	console.log('test functions loaded');
 })();
+
 
 function sumTo100(stuff) {
 	var result = [];
