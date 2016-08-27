@@ -37,10 +37,11 @@
         <!-- li><a href='#'>Contact</a></li-->
       </ul>
       <h3>th<span class="blue">e m</span>ind of <span class="blue">ma</span>n</h3>
+
     </div>
 
     <div class='row'>
-      <div class='col-sm-12 blog-main'>
+      <div class='col-sm-12 '>
         <div class='blog-post'>
           <h2 class='blog-post-title blue'>emma</h2>
 
@@ -57,15 +58,7 @@
                 </div>
               </div>
             </div>
-            <!--div class="col-sm-2">
-                <div class="panel panel-default" >
-                  <div class="panel-heading">Camera</div>
-                  <div id="myMessages" class="myMessagesDiv panel-body">
-                    <img class="img=responsive" src="images/emma-eye-128.png">
-                  </div>
-                  </div>
-
-              </div-->
+            <!-- toolbar -->
             <div class="col-sm-2">
               <button><span class="glyphicon glyphicon-equalizer"></span></button>
               <button><span class="glyphicon glyphicon-signal"></span></button>
@@ -73,8 +66,8 @@
               <button data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon glyphicon-log-in"> </span> </button>
 
             </div>
-
           </div>
+          <!-- a hidden panel -->
           <div class="row">
             <div class="col-sm-8">
               <div class="panel panel-default messagePanel isHidden">
@@ -84,48 +77,48 @@
                 </div>
               </div>
             </div>
-
           </div>
-          <form>
-            <p id="myLastResponse" class='lead blog-description'>The last response </p>
-
-            <div class='row'>
-              <div class='col-sm-8'>
-                <div class="row">
-                  <fieldset class="form-group">
-
-                    <textarea class="form-control" id="msgTextarea" rows="5" placeholder="You will type something here"></textarea>
-                  </fieldset>
-                </div>
-                <div class="row">
-                  <div id="notmyConversation" class="myConversationDiv panel-body">
-
+          <div class="row">
+            <div class='col-sm-12'>
+              <form>
+                  <!-- the last bot response -->
+                <p id="myLastResponse" class='lead blog-description'>The last response </p>
+                <div class='row'>
+                    <!-- the input box -->
+                  <div class='col-sm-8'>
+                    <fieldset class="form-group">
+                      <textarea class="form-control" id="msgTextarea" rows="5" placeholder="You will type something here"></textarea>
+                    </fieldset>
                   </div>
-                </div>
-
-
-              </div>
-
-              <div class='col-sm-2'>
-                <!--
-                  <div class='row'>
-                    <button><span class="glyphicon glyphicon-equalizer"></span></button>
-                    <button><span class="glyphicon glyphicon-signal"></span></button>
-                    <button onClick="showMyMessages()"><span class="glyphicon glyphicon glyphicon-bell"></span></button>
-                    <button data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon glyphicon-log-in"> </span> </button>
-                  -->
-                <div class="row mySpacer">
-                  <div class="row">
-                    <button type="button" onclick="clickedMe();" class="btn btn-default">Send</button>
-                    <button type="button" onclick="resetMe();" class="btn btn-default">Reset</button>
+                  <!-- toolbar buttons -->
+                  <div class='col-sm-2'>
+                    <div class="row mySpacer">
+                      <div class="row">
+                        <button type="button" onclick="clickedMe();" class="btn btn-default">Send</button>
+                        <button type="button" onclick="resetMe();" class="btn btn-default">Reset</button>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
+                <!-- row -->
+
+              </form>
+            </div>
+
+            <!-- col -->
+            <!-- row -->
+          </div>
+          <div class="row">
+            <div class='col-sm-8'>
+              <div class="alert alert-success alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Je ne canna dunna.</strong> Sorry but he hasn't hooked up my brain yet.
               </div>
             </div>
-            <!-- row -->
-
-          </form>
-
+          </div>
           <p></p>
 
         </div>
