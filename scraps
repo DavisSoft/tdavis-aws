@@ -5,3 +5,9 @@
         </code>
     </pre>
 </div>
+
+
+<div class="col-sm-2">
+      <button data-toggle="modal" data-target="#myModal" class="thumbnail">
+          <iframe src="//giphy.com/embed/QJaTIrPVUK2fC" width="248" height="134" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+     </button>

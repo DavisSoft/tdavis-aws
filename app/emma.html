@@ -58,6 +58,7 @@
                 </div>
               </div>
             </div>
+
             <!-- toolbar -->
             <div class="col-sm-2">
               <button><span class="glyphicon glyphicon-equalizer"></span></button>
@@ -65,6 +66,11 @@
               <button onClick="showMyMessages()"><span class="glyphicon glyphicon glyphicon-bell"></span></button>
               <button data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon glyphicon-log-in"> </span> </button>
 
+            </div>
+            <div class="col-sm-2">
+              <button data-toggle="modal" data-target="#profileDialog" class="thumbnail">
+                <img src="images/emma-human-blue-eye.png">
+              </button>
             </div>
           </div>
           <!-- a hidden panel -->
@@ -81,83 +87,135 @@
           <div class="row">
             <div class='col-sm-12'>
               <form>
-                  <!-- the last bot response -->
+                <!-- the last bot response -->
                 <p id="myLastResponse" class='lead blog-description'>The last response </p>
                 <div class='row'>
-                    <!-- the input box -->
+                  <!-- the input box -->
                   <div class='col-sm-8'>
                     <fieldset class="form-group">
-                      <textarea class="form-control" id="msgTextarea" rows="5" placeholder="You will type something here"></textarea>
+                      <textarea class="form-control" id="msgTextarea" rows="5" placeholder="Ask me no questions and i'll tell you no lies"></textarea>
                     </fieldset>
                   </div>
-                  <!-- toolbar buttons -->
-                  <div class='col-sm-2'>
-                    <div class="row mySpacer">
-                      <div class="row">
-                        <button type="button" onclick="clickedMe();" class="btn btn-default">Send</button>
-                        <button type="button" onclick="resetMe();" class="btn btn-default">Reset</button>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <!-- row -->
-
               </form>
-            </div>
+              <!-- toolbar buttons -->
+              <div class='col-sm-2'>
+                <div class="row mySpacer">
+                  <div class="row">
+                    <button type="button" onclick="clickedMe();" class="btn btn-default">Send</button>
+                    <button type="button" onclick="resetMe();" class="btn btn-default">Reset</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="thumbnail">
+                  <img src="images/bronzelegs-logo.png">
+              </div>
+              </div>
+              <!-- row -->
 
-            <!-- col -->
+
+              </div>
+              <!-- col -->
+              <div class="row">
+                <div class='col-sm-8'>
+                  <div class="alert alert-success alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>Je ne canna dunna.</strong> Sorry but he hasn't hooked up my brain yet.
+                  </div>
+                </div>
+              </div>
+              <p></p>
+
+            </div>
             <!-- row -->
+            <!-- /.blog-post -->
+
+
           </div>
-          <div class="row">
-            <div class='col-sm-8'>
-              <div class="alert alert-success alert-dismissible fade in" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <strong>Je ne canna dunna.</strong> Sorry but he hasn't hooked up my brain yet.
+          <!-- /.blog-main -->
+        </div>
+
+        <div class='footer'>
+          <ul class='list-inline'>
+            <li><a href='http://twitter.com/tdavis0525' target='_blank' title='@tdavis0525' style='text-decoration:none;'><i class='fa fa-twitter'></i></a></li>
+            <li><a href='http://github.com/bronzelegs' target='_blank' title='@bronzelegs' style='text-decoration:none;'><i class='fa fa-github'></i></a></li>
+            <li><a href='mailto:tdavis0525@gmail.com' title='tdavis' style='text-decoration:none;'><i class='fa fa-envelope'></i></a></li>
+            <li><small>All original content &copy;Copyright Terry Davis 2015,2016</small></li>
+          </ul>
+        </div>
+      </div>/* row */
+
+
+      <!-- Modal -->
+
+      <div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header myBlue">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+              </div>
+              <div class="modal-body">
+                I'm sorry, no logins are supported at this time.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!--button type="button" class="btn btn-primary">Save changes</button-->
               </div>
             </div>
           </div>
-          <p></p>
-
         </div>
-        <!-- /.blog-post -->
-
-
       </div>
-      <!-- /.blog-main -->
-    </div>
 
-    <div class='footer'>
-      <ul class='list-inline'>
-        <li><a href='http://twitter.com/tdavis0525' target='_blank' title='@tdavis0525' style='text-decoration:none;'><i class='fa fa-twitter'></i></a></li>
-        <li><a href='http://github.com/bronzelegs' target='_blank' title='@bronzelegs' style='text-decoration:none;'><i class='fa fa-github'></i></a></li>
-        <li><a href='mailto:tdavis0525@gmail.com' title='tdavis' style='text-decoration:none;'><i class='fa fa-envelope'></i></a></li>
-        <li><small>All original content &copy;Copyright Terry Davis 2015,2016</small></li>
-      </ul>
+      <!-- Modal -->
+
+      <div>
+        <div class="modal fade" id="profileDialog" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header myBlue">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">This is the profile dialog</h4>
+              </div>
+              <div class="modal-body">
+                profile information for this user will display here
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!--button type="button" class="btn btn-primary">Save changes</button-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div>
+        <div class="modal fade" id="myProfileDialog" tabindex="-3" role="dialog" aria-labelledby="myModalLabel3">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header myBlue">
+                <button type="button" class="close" data-dismiss="modal2" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">This is the profile dialog</h4>
+              </div>
+              <div class="modal-body">
+                profile information for this user will display here
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal2">Close</button>
+                <!--button type="button" class="btn btn-primary">Save changes</button-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header myBlue">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Login</h4>
-        </div>
-        <div class="modal-body">
-          I'm sorry, no logins are supported at this time.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <!--button type="button" class="btn btn-primary">Save changes</button-->
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
