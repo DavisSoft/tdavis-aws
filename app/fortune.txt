@@ -17,5 +17,3 @@ function Fortune() {
 Fortune.prototype.new = function(){
   this.get();
 };
-
-var f = new Fortune();
