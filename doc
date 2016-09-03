@@ -1,0 +1,57 @@
+/*
+ *
+ API req
+
+//
+openSession(clientName, password)
+    getStatus()
+    postCommand()
+    getMessages()
+    //
+    openConversation( avatarId, sessionId)
+        post(conversation, data)
+        get(conversation)
+        closeConversation()
+
+    //
+    openProfile(userID)
+        get()
+        put()
+        closeProfile()
+
+    closeSession
+
+logOpen()
+    post()
+    get()
+    close()
+
+//Data Model
+
+
+    session
+        id
+        userID
+
+        users
+            username
+            profile
+                whatever
+
+        conversation
+            id
+            userIds[]
+            status
+
+        message
+            fromUser
+            timestamp sent
+            toUser
+            content
+                whatever
+
+        sentence
+            message
+
+        response
+            message
