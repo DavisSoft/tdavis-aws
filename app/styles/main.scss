@@ -220,8 +220,55 @@ textarea {
 
 .emma-header h3 {
     /* border: gray; */
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 2px;
-    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    padding-top: 177px;
+}
+
+
+
+.pulses {
+
+    background-color: aliceblue;
+    -webkit-animation-name: -wc-pulse-blue; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: pulse-blue;
+    animation-duration: 1s;
+     animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes -wk-pulse-blue {
+    from {background-color: aliceblue;}
+    to {background-color:  #F7F9F9;}
+}
+
+/* Standard syntax */
+@keyframes pulse-blue {
+    from {background-color: aliceblue;}
+    to {background-color: #F7F9F9;}
+}
+
+.outline {
+    border-color: aliceblue;
+    -webkit-animation-name: -wc-outline-blue; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: outline-gray;
+    animation-duration: 1s;
+     animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes -wk-outline-gray {
+    from {border-color: aliceblue;}
+    to {border-color:  #F7F9F9;}
+}
+
+/* Standard syntax */
+@keyframes outline-gray {
+    from {border-color: aliceblue;}
+    to {border-color: #F7F9F9;}
 }
