@@ -97,3 +97,14 @@ function showMyMessages(){
   console.log('myMessages');
   $('.messagePanel').toggleClass('isHidden');
 }
+
+
+function toggleHeader() {
+    $('.my-slide').slideToggle('slow', function(){
+        console.log('ya');
+    });
+    console.log('click')
+}
+
+$('.my-slide-up').slideUp('slow',function(){});
+$('.my-slide-dn').slideDown('slow',function(){});

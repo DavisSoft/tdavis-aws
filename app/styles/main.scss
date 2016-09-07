@@ -218,14 +218,24 @@ textarea {
     background-repeat: no-repeat
 }
 
+.emma-bg-clipped {
+    background-image: url('../images/emma-net-200.png');
+    background-position: 0px -115px;
+    background-repeat: no-repeat
+}
 .emma-header {
     padding-left: 0px;
     padding-right: 16px;
     padding-bottom: 85px;
     padding-top: 197px;
+
 }
-
-
+.emma-header-clipped {
+    padding-left: 0px;
+    padding-right: 16px;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
 
 .pulses {
 
@@ -253,7 +263,7 @@ textarea {
 .outline {
     border-color: aliceblue;
     -webkit-animation-name: -wc-outline-blue; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
     animation-name: outline-gray;
     animation-duration: 1s;
      animation-direction: reverse;
@@ -262,12 +272,12 @@ textarea {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes -wk-outline-gray {
-    from {border-color: aliceblue;}
-    to {border-color:  #F7F9F9;}
+    from {color: aliceblue;}
+    to {color:  #F7F9F9;}
 }
 
 /* Standard syntax */
 @keyframes outline-gray {
-    from {border-color: aliceblue;}
-    to {border-color: #F7F9F9;}
+    from {color: aliceblue;}
+    to {color: #F7F9F9;}
 }
