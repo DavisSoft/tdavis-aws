@@ -104,11 +104,13 @@ function toggleHeader() {
         // console.log('tick');
     });
 }
+var myVersion = debounce(function() {
+    toggleHeader();
+}, 5000);
 
 $('.my-slide-up').slideUp('fast',function(){});
 $('.my-slide-dn').slideDown('fast',function(){});
 
-setTimeout(function () {
-    //  salert('fired');
-    toggleHeader();
-}, 5000);
+// this prevents weird queued click behaviour
+
+myVersion();
