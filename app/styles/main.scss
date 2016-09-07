@@ -260,6 +260,19 @@ textarea {
     to {background-color: #F7F9F9;}
 }
 
+.my-table-header {
+    background-color:#F7F9F9;
+}
+.my-table-col1 {
+    width: 40%
+}
+.my-table-col2 {
+    width: 20%
+}
+.my-table-col3 {
+    width: 20%
+}
+
 .outline {
     border-color: aliceblue;
     -webkit-animation-name: -wc-outline-blue; /* Chrome, Safari, Opera */

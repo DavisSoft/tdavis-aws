@@ -101,8 +101,14 @@ function showMyMessages(){
 
 function toggleHeader() {
     $('.my-slide').slideToggle('slow', function(){
+        // console.log('tick');
     });
 }
 
-$('.my-slide-up').slideUp('slow',function(){});
-$('.my-slide-dn').slideDown('slow',function(){});
+$('.my-slide-up').slideUp('fast',function(){});
+$('.my-slide-dn').slideDown('fast',function(){});
+
+setTimeout(function () {
+    //  salert('fired');
+    toggleHeader();
+}, 5000);
