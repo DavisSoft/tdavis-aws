@@ -1,8 +1,8 @@
 'use strict';
 
 (function() {
-	$( '#sums-code-data' ).load( 'fortune.txt' );
-	$( '#inh-code-data' ).load( 'fortune.txt' );
+	$( '#sums-code-data' ).load( 'sums.txt' );
+	$( '#inh-code-data' ).load( 'inheritance.txt' );
 	$( '#fortune-code-data' ).load( 'fortune.txt' );
 
 	//console.log('test functions loaded');
