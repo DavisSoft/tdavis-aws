@@ -101,10 +101,16 @@ function showMyMessages(){
 
 function toggleHeader() {
     $('.my-slide').slideToggle('slow', function(){
-        console.log('ya');
+        // console.log('tick');
     });
-    console.log('click')
 }
+var myVersion = debounce(function() {
+    toggleHeader();
+}, 5000);
 
-$('.my-slide-up').slideUp('slow',function(){});
-$('.my-slide-dn').slideDown('slow',function(){});
+$('.my-slide-up').slideUp('fast',function(){});
+$('.my-slide-dn').slideDown('fast',function(){});
+
+// this prevents weird queued click behaviour
+
+myVersion();

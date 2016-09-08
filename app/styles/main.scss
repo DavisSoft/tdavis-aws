@@ -219,9 +219,10 @@ textarea {
 }
 
 .emma-bg-clipped {
-    background-image: url('../images/emma-net-200.png');
-    background-position: 0px -115px;
-    background-repeat: no-repeat
+    background-image: url('../images/emma-net-300.png');
+    background-repeat: no-repeat;
+    background-position: 0px -165px;
+
 }
 .emma-header {
     padding-left: 0px;
@@ -232,9 +233,9 @@ textarea {
 }
 .emma-header-clipped {
     padding-left: 0px;
-    padding-right: 16px;
-    padding-bottom: 50px;
-    padding-top: 15px;
+    padding-top: 33px;
+    /* padding-right: 16px; */
+    padding-bottom: 82px;
 }
 
 .pulses {
@@ -258,6 +259,19 @@ textarea {
 @keyframes pulse-blue {
     from {background-color: aliceblue;}
     to {background-color: #F7F9F9;}
+}
+
+.my-table-header {
+    background-color:#F7F9F9;
+}
+.my-table-col1 {
+    width: 40%
+}
+.my-table-col2 {
+    width: 20%
+}
+.my-table-col3 {
+    width: 20%
 }
 
 .outline {
