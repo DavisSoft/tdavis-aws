@@ -11,3 +11,25 @@
       <button data-toggle="modal" data-target="#myModal" class="thumbnail">
           <iframe src="//giphy.com/embed/QJaTIrPVUK2fC" width="248" height="134" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
      </button>
+
+
+     <div class="blog-post">
+       <h2 class="blog-post-title">emma Update</h2>
+       <p class="lead blog-description">The latest updates</p>
+       <p class="blog-post-meta">September 8, 2016 by <a href="about.html">td</a></p>
+       <div class="row">
+         <div class="col-sm-8">
+           <p>I have completed enough of the prototype UI. The next phase will be moving some of the components around and adding the remaining panels.</p>
+           <p>Most of the API's are defined, the few that remain are informational and dependant on the synapse network. </p>
+           <p>The synapse network is problematic for a a variety of reasons; there are cloud issues, security issues, access issues, and etc.</p>
+           <p>So I'm going to jangle the UI as I mentioned, and continue the above.</p>
+           <p>It may be awhile before the world gets to say hi.</p>
+           <p></p>
+
+         </div>
+         <div class="col-sm-4">
+           <img class="img-responsive" src="images/secret.gif">
+         </div>
+       </div>
+       <!-- row -->
+     </div>
