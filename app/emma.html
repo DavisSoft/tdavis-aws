@@ -33,13 +33,13 @@
 
   <div class="container">
     <div class="row">
-
+        <div class="col-sm-12">
       <div class="my-slide my-slide-dn">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
 
           <h3 onclick="toggleHeader();" class="emma-bg emma-header">th<span class="blue">e m</span>ind of <span class="blue">ma</span>n</h3>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-6">
           <div class="row">
             <div class="">
               </br>
@@ -103,11 +103,12 @@
       <div class="my-slide my-slide-up">
         <h3 onclick="toggleHeader();" class="emma-bg-clipped emma-header-clipped">th<span class="blue">e m</span>ind of <span class="blue">ma</span>n</h3>
       </div>
+  </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="">
         <div class="row">
-          <div class="col-sm-8 avatar-header">
+          <div class="col-sm-10 avatar-header">
             <span onclick="toggleHeader();" class="avatar-text blue">emma</span>
             <span class="pull-right">
               <button onclick='alert("show conversation information panel");'><span class="glyphicon glyphicon-equalizer"></span></button>
@@ -122,7 +123,7 @@
         </div>
         <!-- row -->
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <div class="panel panel-default">
               <div class="panel-heading">Conversation
                 <div class="my-panel-heading-right">
@@ -139,13 +140,13 @@
 
           <div class="col-sm-2">
             <button data-toggle="modal" data-target="#profileDialog" class="thumbnail">
-              <img src="images/sm-animated.gif">
+              <img src="images/lg-animated.gif">
             </button>
           </div>
         </div>
         <!-- a hidden panel -->
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <div class="panel panel-default messagePanel isHidden">
               <div class="panel-heading">Messages</div>
               <div id="myMessages" class="myMessagesDiv panel-body">
@@ -158,14 +159,14 @@
         <div class="row">
           <!-- the last bot response -->
 
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <div class="pulses">
               <p id="myLastResponse" class="lead blog-description">The last response </p>
             </div>
 
           </div>
 
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <!-- the input box -->
             <fieldset class="form-group">
               <textarea class="form-control" id="msgTextarea" rows="5" placeholder="Ask me no questions and i 'll tell you no lies"></textarea>
@@ -176,15 +177,16 @@
             <button data-toggle="modal" data-target="#profileDialog" class="thumbnail">
                     <img  src="images/bronzelegs-logo.png"></button>
           </div>
-
-
-          <div class="col-sm-8 command-buttons">
+          <div class="col-sm-12 command-buttons">
             <button type="button" onclick="clickedMe();" class="btn btn-primary">Send</button>
             <button type="button" onclick="resetMe();" class="btn btn-default">Reset</button>
           </div>
 
+        </div>
+        <div class="row">
 
-          <div class="col-sm-8">
+
+          <div class="col-sm-12">
             <div class="alert alert-success alert-dismissible fade in" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -197,16 +199,16 @@
       </div>
       <!-- row -->
     </div>
-    <!-- col-sm-12 -->
+    <!-- col-lg-12 -->
 
-  <div class='footer'>
-    <ul class='list-inline'>
-      <li><a href='http://twitter.com/tdavis0525' target='_blank' title='@tdavis0525' style='text-decoration:none;'><i class='fa fa-twitter'></i></a></li>
-      <li><a href='http://github.com/bronzelegs' target='_blank' title='@bronzelegs' style='text-decoration:none;'><i class='fa fa-github'></i></a></li>
-      <li><a href='mailto:tdavis0525@gmail.com' title='tdavis' style='text-decoration:none;'><i class='fa fa-envelope'></i></a></li>
-      <li><small>All original content &copy;Copyright Terry Davis 2015,2016</small></li>
-    </ul>
-  </div>
+    <div class='footer'>
+      <ul class='list-inline'>
+        <li><a href='http://twitter.com/tdavis0525' target='_blank' title='@tdavis0525' style='text-decoration:none;'><i class='fa fa-twitter'></i></a></li>
+        <li><a href='http://github.com/bronzelegs' target='_blank' title='@bronzelegs' style='text-decoration:none;'><i class='fa fa-github'></i></a></li>
+        <li><a href='mailto:tdavis0525@gmail.com' title='tdavis' style='text-decoration:none;'><i class='fa fa-envelope'></i></a></li>
+        <li><small>All original content &copy;Copyright Terry Davis 2015,2016</small></li>
+      </ul>
+    </div>
   </div>
 
   <div>
